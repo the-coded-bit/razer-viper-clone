@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.icon-color{
+    color: #44d62c;
+}
+
+.heading{
+    color: #44d62c;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 10;
+}
+
+h3{
+    color: #44d62c;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 10;
+}
+
+.learn-more {
+    text-decoration: none;
+    color: #44d62c;
+    margin-top: 15px;
+    padding-right: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header nav > ul{
+    margin: 0 20px;
+    color: grey;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    column-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    transition: color ease-out;
+}
+
+.header nav > ul li:hover{
+    color: white;
+}
+span{
+    color: grey;
+}
+
+.header span:hover{
+    color: white;
+}
+
+.header nav{
+    margin-top: 20px;
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    overflow: hidden;
+    background: black;
+    display: grid;
+    grid-template-columns: 1fr 3fr 0.5fr 0.5fr;
+    justify-items: center;
+    align-items: center;
+    border-bottom: #44d62c 2px solid;
+    padding-right: 200px;
+    padding-left: 50px;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.header nav img{
+    margin-top: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+.header-content{
+    background-color: black;    
+    position: relative;
+}
+
+.header-content .header-image{
+    display: inline-block;
+    content: ''; 
+    background: url('../img/header.jpg') no-repeat center center / cover;
+    width: 1119px;
+    height: 850px;
+}
+
+.cataloge-content{
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 50px;
+    position: absolute;
+    top: 60px;
+}
+
+.cataloge-content .heading{
+    padding-top: 30px;
+    padding-right: 40px;
+}
+
+.cataloge-content .viper-mini-heading{
+    color: #44D62C;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    text-align:start;
+}
+
+.cataloge-content .explanation{
+    color: #f4f4f4;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.heading .price-tag{
+    color: #f4f4f4;
+    font-weight: bold;
+}
+
+.cataloge-content .viper-mini-properties{
+    color: #ccc;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    list-style-type: disc;
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.experience .additional-products > div img{
+    display: inline;
+}
+
+.experience .additional-products > div .material-icons-round{
+    display: inline;
+    position: absolute;
+    color: #44d62c;
+    cursor: pointer;
+}
+
+.experience .additional-products > div p{
+    display: inline;
+    position: absolute;
+}
+
+.price-tag{
+    color: #f4f4f4;
+    font-weight: bold;
+}
+
+.viper-mini-properties a{
+    text-decoration: none;
+    color: #44d62c;
+}
+
+.add-to-cart{
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    height: 40px;
+    text-transform: uppercase;
+    background-color: #44d62c;
+    font-weight: bolder;
+    transition: background-color ease-in;
+}
+
+.add-to-cart:hover{
+    background-color: #4cf532;
+}
+
+.experience .viper-mini-available{
+    color: #55fc3b;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.experience .viper-mini-available .material-icons-outlined{
+    color: #44d62c; 
+}
+
+/* properties */
+.properties{
+    height: 340px;
+    width: 100%;
+    background-color: #44d62c;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.properties .heading{
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+    font-weight: lighter;
+}
+
+.properties > p{
+    line-height: 30px;
+    font-size: large;
+}
+
+/* all usp */
+.usps{
+    background-color: #000;
+}
+
+.usp-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.usp-container p{
+    white-space: pre;
+    color: #f4f4f4;
+    word-spacing: 2px;
+    font-size: 19px;
+    line-height: 26px;
+}
+
+.usp-1{
+    background: url(../img/razer-viper-mini-usp1.jpg) no-repeat center center / cover;
+    height: 680px;
+    position: relative;
+}
+
+.usp-container-1{
+    top: 190px;
+    left: 200px; 
+    padding-left: 70px;
+    padding-top: 30px;
+}
+
+.usp-container .usp-heading{
+    color: #44d62c;
+    font-size: 30px;
+    font-weight: 10;
+    text-transform: uppercase;
+}
+
+.usp-2{
+    position: relative;
+    background: url(../img/razer-viper-mini-usp2.jpg) no-repeat center center / cover;
+    height: 680px; 
+}
+
+.usp-container-2{
+    top: 190px;
+    right: 200px;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+.usp-3{
+    position: relative;
+    background: url(../img/usp-3.jpg) no-repeat center center / cover;
+    height: 500px;
+    align-content: center;
+}
+
+.usp-container-3{
+    width: 100%;
+    margin-top: 30px;
+    justify-content: center;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.usp-container-3 img{
+    height: 152px;
+    width: 152px;
+    margin-bottom: 20px;
+}
+
+.usp-container-3 p{
+    margin-left: 50px;
+    color: #ccc;
+}
+
+.usp-4{
+    background: url('../img/usp4.jpg') no-repeat center center / cover;
+    position: relative;
+    height: 600px;
+}
+
+.usp-container-4{
+    top: 190px;
+    right: 200px;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+/* panel components */
+.multi-panel-component{
+    background-color: #000;
+    width: 100%;
+    height: 680px;
+    overflow: hidden;
+}
+
+.item-text{
+    color: #f4f4f4;
+    word-spacing: 2px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.multi-panel-img{
+    height: 100px;
+    width: 100px;
+}
+
+.multiple-panel-container{
+    margin: 0 160px;
+    height: 1200px;
+}
+
+.multiple-panel-container .heading{
+    text-align: center;
+    font-size: 25px;
+    margin: 50px 0;
+}
+
+.multiple-panel-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    margin: 0 110px;
+    row-gap: 10px;
+}
+
+.multiple-panel-content .panel-item{
+    text-align: center;
+    width: 500px;
+}
+
+.types-of-viper {
+    text-align: center;
+    background: url('../img/type-of-viper-bg.jpg') no-repeat center center / cover;
+    width: 100%;
+    height: 960px;
+    position: relative;
+}
+
+/* types of viper mouses */
+.types-of-viper .heading{
+    margin-top: 30px;
+    font-weight: 100;
+}
+
+.types-of-viper .learn-more{
+    position: absolute;
+    bottom: 40px;
+    left: 720px;
+}
+
+.faq{
+    background-color: #000;
+    height: 680px;
+}
+
+.faq .heading{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.faq-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    height: 580px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 250px;
+    margin-left: 20px;
+    margin-top: 30px;
+    column-gap: 20px;
+    z-index: 1;
+}
+
+.faq-component{
+    width: 500px;
+    height: 180px;
+    background-color:#333;
+}
+
+.faq-component .question{
+    color: white;
+    font-weight: lighter;
+    font-size: 22px;
+    padding: 20px 20px;
+}
+
+.faq-component .ans{
+    color:#ccc;
+    padding-left: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 400px;
+    background-color: #000;
+}
+
+.footer .footer-container{
+    width: 100%;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 0 150px;
+    margin-top: 80px;
+}
+
+.footer-container ul li:first-child{
+    color: #f4f4f4;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.footer-container ul li{
+    color: #ccc;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.tagline{
+    position: relative;
+}
+
+.tagline .tag{
+    color: #44d62c;
+}
+.tagline .social-handles img{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.tagline .social-handles{
+    position: absolute;
+    right: 36px;
+}
+
+
+
+
+
+
